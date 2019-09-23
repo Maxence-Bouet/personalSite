@@ -1,0 +1,1216 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*::-moz-selection {
+  color: #221e1e;
+  background: rgba(168, 68, 68, 0.521);
+}
+
+*::selection {
+  color: #221e1e;
+  background: rgba(168, 68, 68, 0.521);
+}
+
+@font-face {
+  font-family: PopExtraLight;
+  src: url("./fonts/Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: PopLight;
+  src: url("./fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: PopRegular;
+  src: url("./fonts/Poppins-Regular.ttf");
+}
+
+/*
+
+! On phone
+
+*/
+.logo img {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  width: 10%;
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+}
+
+.first-page {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: PopRegular;
+  background-image: radial-gradient(#3a3a3a, #102438);
+}
+
+.first-page .title {
+  position: relative;
+  width: 100%;
+}
+
+.first-page .title .text {
+  height: 100%;
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  top: 5%;
+  left: 3%;
+}
+
+.first-page .title .name {
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: white;
+  padding-bottom: 6%;
+}
+
+.first-page .title .country {
+  font-size: 25px;
+  letter-spacing: 15px;
+  color: white;
+}
+
+.first-page .title .town {
+  font-size: 18px;
+  letter-spacing: 12px;
+  color: white;
+  padding-bottom: 7%;
+}
+
+.first-page .title .age {
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: white;
+  padding-bottom: 25%;
+}
+
+.first-page .title .job {
+  position: relative;
+  font-family: PopRegular;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.first-page .title .job .job-abs {
+  position: absolute;
+  bottom: 30%;
+}
+
+.first-page .title .job p {
+  font-size: 13px;
+  color: #a3a3a3;
+  padding-bottom: 2%;
+}
+
+.first-page .title .job ul li {
+  padding-bottom: 5px !important;
+  list-style-type: none;
+}
+
+.first-page .bg {
+  width: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.first-page .list {
+  position: relative;
+  width: 100%;
+}
+
+.first-page .list ul {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  -webkit-transform: translate(10%, -50%);
+          transform: translate(10%, -50%);
+  text-align: right;
+}
+
+.first-page .list ul li {
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #a3a3a3;
+  list-style-type: none;
+  cursor: pointer;
+  padding: 15px 0 15px 15px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.first-page .list ul li:hover {
+  color: white;
+}
+
+.first-page .list ul li::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 5px;
+  background-color: #a3a3a3;
+  position: absolute;
+  right: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.first-page .list ul li:hover::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+}
+
+.main {
+  background: linear-gradient(-20deg, #421414, #16293c);
+}
+
+.etude {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  font-family: PopRegular;
+}
+
+.etude h1 {
+  font-family: PopExtraLight;
+  font-size: 26px;
+  letter-spacing: 10px;
+  color: white;
+  text-align: left;
+  padding: 8% 0 5% 2%;
+}
+
+.etude h2 {
+  font-family: PopExtraLight;
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: white;
+  text-align: left;
+  padding: 0% 0% 6% 2%;
+}
+
+.etude .timelineEtude {
+  display: none;
+}
+
+.etude .timelineEtudePhone {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30% 70%;
+      grid-template-rows: 30% 70%;
+  width: 100%;
+  height: 100%;
+  min-height: 50vh;
+  padding: 10% 0;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-list .timelineEtudePhone-listRelative {
+  position: relative;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-list .timelineEtudePhone-listRelative #up {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-list .timelineEtudePhone-listRelative #down {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-list .timelineEtudePhone-listRelative ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-list ul,
+.etude .timelineEtudePhone .timelineEtudePhone-list p {
+  display: inline;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-list ul li,
+.etude .timelineEtudePhone .timelineEtudePhone-list p li {
+  font-size: 18px;
+  list-style-type: none;
+  display: inline;
+  -webkit-transition: height 0.6s, all 0.6s ease-out;
+  transition: height 0.6s, all 0.6s ease-out;
+  padding: 0 10px;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-list ul .hidden,
+.etude .timelineEtudePhone .timelineEtudePhone-list p .hidden {
+  height: 0px;
+  font-size: 0px !important;
+  padding: 0% !important;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-content {
+  position: relative;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-content ul li {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  list-style-type: none;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-content ul li .timelineEtudePhone-contentHeader p {
+  font-size: 14px;
+  color: #a3a3a3;
+  text-align: left;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-content ul li .timelineEtudePhone-contentHeader h1 {
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-content ul li .timelineEtudePhone-contentHeader .hidden {
+  color: transparent;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-content ul li .timelineEtudePhone-contentBody {
+  height: 100%;
+  font-size: 16px;
+  color: #a3a3a3;
+  text-align: left;
+  padding-top: 10%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.etude .timelineEtudePhone .timelineEtudePhone-content ul li .hidden {
+  color: transparent;
+}
+
+.professionnel {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  font-family: PopRegular;
+  padding-bottom: 6%;
+}
+
+.professionnel h1 {
+  font-family: PopExtraLight;
+  font-size: 26px;
+  letter-spacing: 5px;
+  color: white;
+  text-align: left;
+  padding: 10% 0 10% 2%;
+}
+
+.professionnel .timelineProfessionnel {
+  display: none;
+}
+
+.professionnel .timelineProfessionnelPhone {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-listRelative {
+  position: relative;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-listRelative #up {
+  position: absolute;
+  left: 10px;
+  z-index: 1;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-listRelative #down {
+  position: absolute;
+  right: 10px;
+  z-index: 1;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-list ul,
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-list p {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-list ul :nth-child(n),
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-list p :nth-child(n) {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-list ul li,
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-list p li {
+  height: 100%;
+  font-size: 15px;
+  list-style-type: none;
+  -webkit-transition: height 0.6s, all 0.6s ease-out;
+  transition: height 0.6s, all 0.6s ease-out;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-list ul li p,
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-list p li p {
+  font-size: 10px;
+  color: #a3a3a3;
+  padding-top: 0px !important;
+  -webkit-transition: all 0.6s ease-out !important;
+  transition: all 0.6s ease-out !important;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-list ul li:focus,
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-list p li:focus {
+  font-size: 30px;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-list ul .hidden,
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-list p .hidden {
+  height: 0px;
+  font-size: 0px !important;
+  padding: 0% !important;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-content {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-content ul li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  margin: auto;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-content ul li .timelineProfessionnelPhone-contentHeader {
+  padding: 0;
+  width: 80%;
+  margin: auto;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-content ul li .timelineProfessionnelPhone-contentHeader p {
+  font-size: 14px;
+  color: #a3a3a3;
+  text-align: left;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-content ul li .timelineProfessionnelPhone-contentHeader h1 {
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-content ul li .timelineProfessionnelPhone-contentHeader .hidden {
+  color: transparent;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-content ul li .timelineProfessionnelPhone-contentBody {
+  font-size: 18px;
+  font-family: PopExtraLight;
+  color: #a3a3a3;
+  text-align: left;
+  padding: 20px 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.professionnel .timelineProfessionnelPhone .timelineProfessionnelPhone-content ul li .hidden {
+  color: transparent;
+}
+
+.competence {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  font-family: PopRegular;
+}
+
+.competence h1 {
+  font-family: PopExtraLight;
+  font-size: 26px;
+  letter-spacing: 10px;
+  color: white;
+  text-align: left;
+  padding: 5% 0 3% 2%;
+}
+
+.competence .dashboard {
+  padding-top: 10%;
+}
+
+.competence .dashboard .langue {
+  padding-bottom: 60px;
+}
+
+.competence .dashboard .langue h2 {
+  font-size: 20px;
+  color: white;
+  padding: 0px 0px 20px 20px;
+}
+
+.competence .dashboard .langue ul li {
+  padding-bottom: 10px;
+  padding-left: 50px;
+  list-style-type: none;
+}
+
+.competence .dashboard .langue ul li h3 {
+  font-family: PopRegular;
+  font-size: 15px;
+  letter-spacing: 10px;
+  color: white;
+}
+
+.competence .dashboard .langue ul li h3 span {
+  font-family: PopLight;
+  font-size: 15px;
+  color: #a3a3a3;
+}
+
+.competence .dashboard .informatique {
+  padding-bottom: 60px;
+}
+
+.competence .dashboard .informatique h2 {
+  font-size: 20px;
+  color: white;
+  padding: 0px 0px 20px 20px;
+}
+
+.competence .dashboard .informatique ul li {
+  padding-bottom: 10px;
+  padding-left: 50px;
+  list-style-type: none;
+}
+
+.competence .dashboard .informatique ul li h3 {
+  font-family: PopRegular;
+  font-size: 15px;
+  letter-spacing: 10px;
+  color: white;
+}
+
+.competence .dashboard .informatique ul li h3 span {
+  font-family: PopLight;
+  font-size: 15px;
+  color: #a3a3a3;
+}
+
+.competence .dashboard .autre {
+  padding-bottom: 60px;
+}
+
+.competence .dashboard .autre h2 {
+  font-size: 20px;
+  color: white;
+  padding: 0px 0px 20px 20px;
+}
+
+.competence .dashboard .autre ul li {
+  padding-bottom: 10px;
+  padding-left: 50px;
+  list-style-type: none;
+}
+
+.competence .dashboard .autre ul li h3 {
+  font-family: PopRegular;
+  font-size: 15px;
+  letter-spacing: 10px;
+  color: white;
+}
+
+.competence .dashboard .autre ul li h3 span {
+  font-family: PopLight;
+  font-size: 15px;
+  color: #a3a3a3;
+}
+
+.intercalaire {
+  width: 100%;
+  height: 2px;
+  background-color: #eed023;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  text-align: center;
+  font-family: PopExtraLight;
+  padding: 50px 0 50px 0;
+  background: linear-gradient(-10deg, #171717, #000000);
+}
+
+footer h1 {
+  font-size: 22px;
+  letter-spacing: 10px;
+  color: white;
+}
+
+footer h2 {
+  font-size: 15px;
+  letter-spacing: 20px;
+  color: white;
+}
+
+footer p {
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: white;
+  padding-top: 30px;
+}
+
+footer a svg {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+/*
+
+! On tablette
+
+*/
+@media only screen and (min-width: 768px) {
+  .first-page .title .country {
+    font-size: 30px;
+  }
+  .first-page .title .town {
+    font-size: 20px;
+  }
+  .first-page .title .job {
+    font-size: 25px;
+  }
+  .first-page .bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .first-page .photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    overflow: hidden;
+  }
+  .first-page .photo img {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    width: 130px;
+  }
+  .first-page .photo .left img {
+    -webkit-transform: translate(0, -15%);
+            transform: translate(0, -15%);
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .first-page .photo .right img {
+    -webkit-transform: translate(0, 15%);
+            transform: translate(0, 15%);
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .first-page .photo:hover img {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-filter: grayscale(30%);
+            filter: grayscale(30%);
+  }
+  .first-page .list ul li {
+    font-size: 20px;
+  }
+  .etude h1 {
+    font-size: 40px;
+    padding: 10% 0 3% 2%;
+  }
+  .etude h2 {
+    font-size: 20px;
+  }
+  .etude .timelineEtudePhone {
+    display: none;
+  }
+  .etude .timelineEtude {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 1fr;
+        grid-template-columns: 30% 1fr;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 12% 0;
+  }
+  .etude .timelineEtude .timelineEtude-list {
+    position: relative;
+  }
+  .etude .timelineEtude .timelineEtude-list svg {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+  }
+  .etude .timelineEtude .timelineEtude-list ul,
+  .etude .timelineEtude .timelineEtude-list p {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+  .etude .timelineEtude .timelineEtude-list ul :nth-child(n),
+  .etude .timelineEtude .timelineEtude-list p :nth-child(n) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .etude .timelineEtude .timelineEtude-list ul li,
+  .etude .timelineEtude .timelineEtude-list p li {
+    height: 100%;
+    font-size: 25px;
+    list-style-type: none;
+    -webkit-transition: height 0.6s, all 0.6s ease-out;
+    transition: height 0.6s, all 0.6s ease-out;
+  }
+  .etude .timelineEtude .timelineEtude-list ul li:focus,
+  .etude .timelineEtude .timelineEtude-list p li:focus {
+    font-size: 30px;
+  }
+  .etude .timelineEtude .timelineEtude-list ul .hidden,
+  .etude .timelineEtude .timelineEtude-list p .hidden {
+    height: 0px;
+    font-size: 0px !important;
+    padding: 0% !important;
+  }
+  .etude .timelineEtude .timelineEtude-content {
+    position: relative;
+    margin-top: 150px;
+  }
+  .etude .timelineEtude .timelineEtude-content ul li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+  }
+  .etude .timelineEtude .timelineEtude-content ul li .timelineEtude-contentHeader p {
+    font-size: 20px;
+    color: #a3a3a3;
+    text-align: left;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .etude .timelineEtude .timelineEtude-content ul li .timelineEtude-contentHeader h1 {
+    font-size: 25px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 40px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .etude .timelineEtude .timelineEtude-content ul li .timelineEtude-contentHeader .hidden {
+    color: transparent;
+  }
+  .etude .timelineEtude .timelineEtude-content ul li .timelineEtude-contentBody {
+    font-size: 20px;
+    color: #a3a3a3;
+    text-align: left;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .etude .timelineEtude .timelineEtude-content ul li .hidden {
+    color: transparent;
+  }
+  .professionnel h1 {
+    font-size: 40px;
+    padding: 7% 0 9% 2%;
+  }
+  .professionnel .timelineProfessionnelPhone {
+    display: none;
+  }
+  .professionnel .timelineProfessionnel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 1fr;
+        grid-template-columns: 30% 1fr;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .professionnel .timelineProfessionnel-list svg {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+  }
+  .professionnel .timelineProfessionnel-list ul,
+  .professionnel .timelineProfessionnel-list p {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+  .professionnel .timelineProfessionnel-list ul :nth-child(n),
+  .professionnel .timelineProfessionnel-list p :nth-child(n) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .professionnel .timelineProfessionnel-list ul li,
+  .professionnel .timelineProfessionnel-list p li {
+    height: 100%;
+    font-size: 20px;
+    list-style-type: none;
+    -webkit-transition: height 0.6s, all 0.6s ease-out;
+    transition: height 0.6s, all 0.6s ease-out;
+  }
+  .professionnel .timelineProfessionnel-list ul li p,
+  .professionnel .timelineProfessionnel-list p li p {
+    font-size: 15px;
+    color: #a3a3a3;
+    padding-top: 0px !important;
+    -webkit-transition: all 0.6s ease-out !important;
+    transition: all 0.6s ease-out !important;
+  }
+  .professionnel .timelineProfessionnel-list ul li:focus,
+  .professionnel .timelineProfessionnel-list p li:focus {
+    font-size: 30px;
+  }
+  .professionnel .timelineProfessionnel-list ul .hidden,
+  .professionnel .timelineProfessionnel-list p .hidden {
+    height: 0px;
+    font-size: 0px !important;
+    padding: 0% !important;
+  }
+  .professionnel .timelineProfessionnel-content {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+  .professionnel .timelineProfessionnel-content ul li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+  }
+  .professionnel .timelineProfessionnel-content ul li .timelineProfessionnel-contentHeader p {
+    font-size: 20px;
+    color: #a3a3a3;
+    text-align: left;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .professionnel .timelineProfessionnel-content ul li .timelineProfessionnel-contentHeader h1 {
+    font-size: 22px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 40px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .professionnel .timelineProfessionnel-content ul li .timelineProfessionnel-contentHeader .hidden {
+    color: transparent;
+  }
+  .professionnel .timelineProfessionnel-content ul li .timelineProfessionnel-contentBody {
+    font-size: 20px;
+    font-family: PopExtraLight;
+    color: #a3a3a3;
+    text-align: left;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .professionnel .timelineProfessionnel-content ul li .hidden {
+    color: transparent;
+  }
+  .competence {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    font-family: PopRegular;
+  }
+  .competence h1 {
+    font-family: PopExtraLight;
+    font-size: 45px;
+    letter-spacing: 10px;
+    color: white;
+    text-align: left;
+    padding: 5% 0 3% 2%;
+  }
+  .competence .dashboard {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    padding-top: 10%;
+  }
+  .competence .dashboard .langue {
+    padding-bottom: 60px;
+  }
+  .competence .dashboard .langue h2 {
+    font-size: 25px;
+    color: white;
+    padding: 0px 0px 20px 20px;
+  }
+  .competence .dashboard .langue ul li {
+    padding-bottom: 10px;
+    padding-left: 50px;
+    list-style-type: none;
+  }
+  .competence .dashboard .langue ul li h3 {
+    font-family: PopRegular;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: white;
+  }
+  .competence .dashboard .langue ul li h3 span {
+    font-family: PopLight;
+    font-size: 15px;
+    color: #a3a3a3;
+  }
+  .competence .dashboard .informatique {
+    padding-bottom: 60px;
+  }
+  .competence .dashboard .informatique h2 {
+    font-size: 25px;
+    color: white;
+    padding: 0px 0px 20px 20px;
+  }
+  .competence .dashboard .informatique ul li {
+    padding-bottom: 10px;
+    padding-left: 50px;
+    list-style-type: none;
+  }
+  .competence .dashboard .informatique ul li h3 {
+    font-family: PopRegular;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: white;
+  }
+  .competence .dashboard .informatique ul li h3 span {
+    font-family: PopLight;
+    font-size: 15px;
+    color: #a3a3a3;
+  }
+  .competence .dashboard .autre h2 {
+    font-size: 25px;
+    color: white;
+    padding: 0px 0px 20px 20px;
+  }
+  .competence .dashboard .autre ul li {
+    padding-bottom: 10px;
+    padding-left: 50px;
+    list-style-type: none;
+  }
+  .competence .dashboard .autre ul li h3 {
+    font-family: PopRegular;
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: white;
+  }
+  .competence .dashboard .autre ul li h3 span {
+    font-family: PopLight;
+    font-size: 15px;
+    color: #a3a3a3;
+  }
+  footer h1 {
+    font-size: 22px;
+    letter-spacing: 15px;
+  }
+}
+
+/* 
+
+! On computer
+
+*/
+@media only screen and (min-width: 1024px) {
+  .logo img {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: 5%;
+    -webkit-filter: brightness(200%);
+            filter: brightness(200%);
+  }
+  .first-page .title .name {
+    font-size: 60px;
+  }
+  .first-page .title .age {
+    font-size: 25px;
+  }
+  .first-page .title .job {
+    font-size: 30px;
+  }
+  .first-page .title .job p {
+    font-size: 15px;
+  }
+  .first-page .list ul li {
+    font-size: 25px;
+    letter-spacing: 5px;
+  }
+  .first-page .photo img {
+    width: 160px;
+  }
+  .etude h1 {
+    font-size: 60px;
+  }
+  .etude h2 {
+    font-size: 30px;
+  }
+  .etude .timelineEtude .timelineEtude-content ul li .timelineEtude-contentHeader p {
+    font-size: 25px;
+  }
+  .etude .timelineEtude .timelineEtude-content ul li .timelineEtude-contentHeader h1 {
+    font-size: 35px;
+  }
+  .etude .timelineEtude .timelineEtude-content ul li .timelineEtude-contentBody {
+    font-size: 25px;
+  }
+  .professionnel h1 {
+    font-size: 60px;
+  }
+  .professionnel .timelineProfessionnel .timelineProfessionnel-content ul li .timelineProfessionnel-contentHeader p {
+    font-size: 25px;
+  }
+  .professionnel .timelineProfessionnel .timelineProfessionnel-content ul li .timelineProfessionnel-contentHeader h1 {
+    font-size: 35px;
+  }
+  .professionnel .timelineProfessionnel .timelineProfessionnel-content ul li .timelineProfessionnel-contentBody {
+    font-size: 25px;
+  }
+  .competence h1 {
+    font-size: 60px;
+  }
+  .competence .dashboard .langue h2 {
+    font-size: 40px;
+  }
+  .competence .dashboard .langue ul li {
+    padding-bottom: 20px;
+  }
+  .competence .dashboard .langue ul li h3 {
+    font-size: 25px;
+  }
+  .competence .dashboard .autre h2 {
+    font-size: 40px;
+  }
+  .competence .dashboard .autre ul li {
+    padding-bottom: 20px;
+  }
+  .competence .dashboard .autre ul li h3 {
+    font-size: 25px;
+  }
+  .competence .dashboard .informatique h2 {
+    font-size: 40px;
+  }
+  .competence .dashboard .informatique ul li {
+    padding-bottom: 20px;
+  }
+  .competence .dashboard .informatique ul li h3 {
+    font-size: 25px;
+  }
+}
+
+/*
+
+! On big computer
+
+*/
+@media only screen and (min-width: 1150px) {
+  .first-page .title .text {
+    top: 10%;
+  }
+  .first-page .title .name {
+    font-size: 50px;
+  }
+  .first-page .title .country {
+    font-size: 40px;
+  }
+  .first-page .title .town {
+    font-size: 30px;
+  }
+  .first-page .title .age {
+    font-size: 25px;
+  }
+  .first-page .title .job {
+    font-size: 40px;
+  }
+  .first-page .title .job p {
+    font-size: 15px;
+  }
+  .first-page .photo img {
+    width: 200px;
+  }
+  .main {
+    background: linear-gradient(-30deg, #421414, #16293c);
+  }
+  .etude h1 {
+    font-size: 60px;
+    padding: 6% 0 2% 5%;
+  }
+  .etude h2 {
+    font-size: 30px;
+    letter-spacing: 10px;
+    padding: 0% 0% 12% 5%;
+  }
+  .etude .timelineEtude {
+    width: 90%;
+    text-align: center;
+    padding: 0 0 50px 0;
+  }
+  .etude .timelineEtude .timelineEtude-content ul li .timelineEtude-contentHeader h1 {
+    font-size: 30px;
+  }
+  .etude .timelineEtude .timelineEtude-content ul li .timelineEtude-contentBody {
+    font-family: PopExtraLight;
+    font-size: 25px;
+    color: white;
+  }
+  .etude .timelineEtude .timelineEtude-content ul li .hidden {
+    color: transparent;
+  }
+  .professionnel h1 {
+    font-size: 60px;
+    padding: 5% 0 15% 5%;
+  }
+  .professionnel .timelineProfessionnel {
+    -ms-grid-columns: 30% 1fr;
+        grid-template-columns: 30% 1fr;
+    width: 90%;
+  }
+  .professionnel .timelineProfessionnel-list ul li,
+  .professionnel .timelineProfessionnel-list p li {
+    font-size: 25px;
+  }
+  .professionnel .timelineProfessionnel-list ul li p,
+  .professionnel .timelineProfessionnel-list p li p {
+    font-size: 20px;
+  }
+  .professionnel .timelineProfessionnel-list ul .hidden,
+  .professionnel .timelineProfessionnel-list p .hidden {
+    height: 0px;
+    font-size: 0px !important;
+    padding: 0% !important;
+  }
+  .professionnel .timelineProfessionnel-content {
+    width: 95%;
+    margin-inline: auto;
+  }
+  .professionnel .timelineProfessionnel-content ul li {
+    -ms-grid-rows: 30% 70%;
+        grid-template-rows: 30% 70%;
+  }
+  .professionnel .timelineProfessionnel-content ul li .timelineProfessionnel-contentHeader h1 {
+    font-size: 30px;
+  }
+  .professionnel .timelineProfessionnel-content ul li .timelineProfessionnel-contentHeader .hidden {
+    color: transparent;
+  }
+  .professionnel .timelineProfessionnel-content ul li .timelineProfessionnel-contentBody {
+    font-size: 20px;
+  }
+  .professionnel .timelineProfessionnel-content ul li .hidden {
+    color: transparent;
+  }
+  .competence h1 {
+    font-size: 60px;
+    padding: 5% 0 13% 5%;
+  }
+  .competence .dashboard {
+    padding-top: 0;
+  }
+  .competence .dashboard .langue h2 {
+    font-size: 35px;
+    padding: 0px 0px 20px 50px;
+  }
+  .competence .dashboard .langue ul li {
+    padding-left: 100px;
+  }
+  .competence .dashboard .langue ul li h3 {
+    font-size: 25px;
+  }
+  .competence .dashboard .langue ul li h3 span {
+    font-size: 20px;
+  }
+  .competence .dashboard .informatique h2 {
+    font-size: 35px;
+    padding: 0px 0px 20px 50px;
+  }
+  .competence .dashboard .informatique ul li {
+    padding-left: 100px;
+  }
+  .competence .dashboard .informatique ul li h3 {
+    font-size: 25px;
+  }
+  .competence .dashboard .informatique ul li h3 span {
+    font-size: 20px;
+  }
+  .competence .dashboard .autre h2 {
+    font-size: 35px;
+    padding: 0px 0px 20px 50px;
+  }
+  .competence .dashboard .autre ul li {
+    padding-left: 100px;
+  }
+  .competence .dashboard .autre ul li h3 {
+    font-size: 25px;
+  }
+  .competence .dashboard .autre ul li h3 span {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
